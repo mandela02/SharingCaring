@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848220A425168DB400AB0C7B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848220A325168DB400AB0C7B /* Session.swift */; };
+		848220A725168F8000AB0C7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848220A625168F8000AB0C7B /* Constants.swift */; };
+		848220AA2516908F00AB0C7B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848220A92516908F00AB0C7B /* Category.swift */; };
+		848220AE2516919600AB0C7B /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848220AD2516919600AB0C7B /* CategoriesResponse.swift */; };
+		848220C12516A02100AB0C7B /* ObservableType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848220C02516A02100AB0C7B /* ObservableType+Extension.swift */; };
+		848220C62516A0BC00AB0C7B /* CategoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848220C52516A0BC00AB0C7B /* CategoryList.swift */; };
 		8484AE0D25168017001B2F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484AE0C25168017001B2F6E /* AppDelegate.swift */; };
 		8484AE1125168017001B2F6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484AE1025168017001B2F6E /* ViewController.swift */; };
 		8484AE1425168017001B2F6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8484AE1225168017001B2F6E /* Main.storyboard */; };
@@ -18,6 +24,12 @@
 /* Begin PBXFileReference section */
 		083967733F14BD0E99B3F4C2 /* Pods-SharingCaring.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharingCaring.release.xcconfig"; path = "Target Support Files/Pods-SharingCaring/Pods-SharingCaring.release.xcconfig"; sourceTree = "<group>"; };
 		0A1661B49120A248BB9E4A65 /* Pods_SharingCaring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharingCaring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		848220A325168DB400AB0C7B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		848220A625168F8000AB0C7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		848220A92516908F00AB0C7B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		848220AD2516919600AB0C7B /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		848220C02516A02100AB0C7B /* ObservableType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extension.swift"; sourceTree = "<group>"; };
+		848220C52516A0BC00AB0C7B /* CategoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList.swift; sourceTree = "<group>"; };
 		8484AE0925168017001B2F6E /* SharingCaring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharingCaring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8484AE0C25168017001B2F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8484AE1025168017001B2F6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +59,24 @@
 				083967733F14BD0E99B3F4C2 /* Pods-SharingCaring.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		848220BF2516A00D00AB0C7B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				848220C02516A02100AB0C7B /* ObservableType+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		848220C32516A09E00AB0C7B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				848220A92516908F00AB0C7B /* Category.swift */,
+				848220AD2516919600AB0C7B /* CategoriesResponse.swift */,
+				848220C52516A0BC00AB0C7B /* CategoryList.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		8484AE0025168017001B2F6E = {
@@ -89,6 +119,7 @@
 		8484AE232516833A001B2F6E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				848220C32516A09E00AB0C7B /* Category */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +141,7 @@
 		8484AE2625168350001B2F6E /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				848220A325168DB400AB0C7B /* Session.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -117,6 +149,8 @@
 		8484AE272516835E001B2F6E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				848220BF2516A00D00AB0C7B /* Extension */,
+				848220A625168F8000AB0C7B /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -269,8 +303,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848220AE2516919600AB0C7B /* CategoriesResponse.swift in Sources */,
 				8484AE1125168017001B2F6E /* ViewController.swift in Sources */,
 				8484AE0D25168017001B2F6E /* AppDelegate.swift in Sources */,
+				848220AA2516908F00AB0C7B /* Category.swift in Sources */,
+				848220A425168DB400AB0C7B /* Session.swift in Sources */,
+				848220C12516A02100AB0C7B /* ObservableType+Extension.swift in Sources */,
+				848220A725168F8000AB0C7B /* Constants.swift in Sources */,
+				848220C62516A0BC00AB0C7B /* CategoryList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
