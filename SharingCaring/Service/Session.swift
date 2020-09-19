@@ -29,7 +29,11 @@ class Session {
     private let disposeBag = DisposeBag()
 
     func getData() -> Observable<[Category]> {
-        Observable.create { observable in
+        Observable.create {[weak self] observable in
+            guard let self = self else {
+                observable.onNext([])
+                return Disposables.create()
+            }
             RxAlamofire.requestData(.get, UrlType.categories.urlString)
                 .observeOn(MainScheduler.instance)
                 .mapObject(type: CategoriesResponse.self)
