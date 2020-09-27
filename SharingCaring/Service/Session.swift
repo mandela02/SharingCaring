@@ -28,7 +28,7 @@ class Session {
     private init() {}
     private let disposeBag = DisposeBag()
 
-    func getData() -> Observable<[Category]> {
+    func getCategoryData() -> Observable<[Category]> {
         Observable.create {[weak self] observable in
             guard let self = self else {
                 observable.onNext([])
