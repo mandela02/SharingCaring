@@ -13,7 +13,7 @@ class CategoryList: Codable {
     private enum CodingKeys: String, CodingKey {
         case categories
     }
-    
+
     init(categories: [Category]) {
         self.categories = categories
     }

@@ -18,10 +18,8 @@ PODS:
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - RxRealm (0.7.6):
-    - RealmSwift (~> 3.0)
-    - RxSwift (~> 4.0)
   - RxSwift (4.5.0)
+  - SideMenu (6.4.9)
   - SwiftLint (0.40.2)
 
 DEPENDENCIES:
@@ -30,8 +28,8 @@ DEPENDENCIES:
   - RxAlamofire
   - RxCocoa (~> 4.5)
   - RxDataSources
-  - RxRealm
   - RxSwift (~> 4.5)
+  - SideMenu
   - SwiftLint
 
 SPEC REPOS:
@@ -44,8 +42,8 @@ SPEC REPOS:
     - RxAlamofire
     - RxCocoa
     - RxDataSources
-    - RxRealm
     - RxSwift
+    - SideMenu
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -57,10 +55,10 @@ SPEC CHECKSUMS:
   RxAlamofire: ed65f451f5a9a59419b0b9e705043dc01410edd9
   RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
   RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
-  RxRealm: 5379eddd74f8d617ca7681d1f8d144af25b432b0
   RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
   SwiftLint: 1216c910d27c2633ade33b4f071bb6b930982e62
 
-PODFILE CHECKSUM: e0fe0b466f39d6d4396bc5d2844b5db00c39f3bd
+PODFILE CHECKSUM: 0e405e60615afc8250c46deb2d5824b82bd5d5ec
 
 COCOAPODS: 1.9.1

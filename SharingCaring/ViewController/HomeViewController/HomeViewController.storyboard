@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="o6A-XX-s9f">
+            <objects>
+                <viewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" id="RMS-jh-lBF" customClass="HomeViewController" customModule="SharingCaring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tXk-7f-Sxf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fsq-i8-SLH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pS0-qX-msQ">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="M4c-E2-24h">
+                            <connections>
+                                <segue destination="Qqf-2O-kXW" kind="modal" identifier="SideBarMenu" id="M4h-cC-mwt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rx-Rd-byV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="39.508928571428569"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="tCJ-ln-wP8">
+            <objects>
+                <viewController id="eTN-oU-Tbs" customClass="SideMenuViewController" customModule="SharingCaring" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Za-XM-eVp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="83E-hz-0yK">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tfg-OH-dy7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="83E-hz-0yK" firstAttribute="leading" secondItem="tfg-OH-dy7" secondAttribute="leading" id="DqH-ce-9sh"/>
+                            <constraint firstItem="83E-hz-0yK" firstAttribute="top" secondItem="tfg-OH-dy7" secondAttribute="top" id="HVU-kS-TW1"/>
+                            <constraint firstItem="tfg-OH-dy7" firstAttribute="bottom" secondItem="83E-hz-0yK" secondAttribute="bottom" id="ijF-uY-1Jf"/>
+                            <constraint firstItem="tfg-OH-dy7" firstAttribute="trailing" secondItem="83E-hz-0yK" secondAttribute="trailing" id="tb6-4R-Oi4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ipH-Fs-9Ol"/>
+                    <connections>
+                        <outlet property="sideMenuTableView" destination="83E-hz-0yK" id="shi-MS-RxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KPc-CH-2sm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2670" y="40"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y9g-zc-xNP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ozQ-PT-ZnZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ey0-Ht-PPV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RMS-jh-lBF" kind="relationship" relationship="rootViewController" id="laz-qZ-S8s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCU-VQ-ZTW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="39.508928571428569"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="Z14-2B-Bsv">
+            <objects>
+                <navigationController restorationIdentifier="SideMenuNavigationController" storyboardIdentifier="SideMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Qqf-2O-kXW" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bg8-yu-Wmu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="eTN-oU-Tbs" kind="relationship" relationship="rootViewController" id="aK9-yF-lUw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOS-WV-x7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

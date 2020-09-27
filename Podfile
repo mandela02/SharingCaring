@@ -11,7 +11,7 @@ target 'SharingCaring' do
     	pod 'RxCocoa', '~> 4.5' 
     	pod 'RxDataSources'
     	pod 'RealmSwift'
-    	pod 'RxRealm'
     	pod 'ReachabilitySwift'
 	pod 'RxAlamofire'
+	pod 'SideMenu'
 end

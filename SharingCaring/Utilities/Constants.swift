@@ -10,3 +10,7 @@ import Foundation
 struct Constants {
     static let baseUrl = "https://api.avgle.com/v1/"
 }
+
+struct Identifier {
+    static let sideMenu = "SideBarMenu"
+}
